@@ -1,0 +1,1 @@
+web: gunicorn E_Com_7eightySix.wsgi

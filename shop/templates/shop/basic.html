@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>{% block title %} {% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+
+  <!-- Carousel Slider -->
+  <!-- <link rel="stylesheet" href="{% static 'shop/css/owl.carousel.css' %}"> -->
+  <!-- <link rel="stylesheet" href="{% static 'shop/css/owl.theme.default.css' %}"> -->
+
+  <!-- Fonts -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="custom-font">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/shop">
+      {% load static %}
+      <img src="{% static 'shop/images/logo.png' %}" width="100" height="40" class="d-inline-block align-top"
+        alt="logo">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link text-uppercase font-weight-bolder" href="/shop/mensware">Men</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase font-weight-bolder" href="/shop/womensware">Women</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase font-weight-bolder" href="/shop/kidsware">Kids</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 search-form">
+        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search for products, brands and more"
+          aria-label="Search">
+      </form>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item" data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" data-content="" id="displatCart">
+          <a class="nav-link text-uppercase text-muted" href="#">Cart(<span id="cart">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-muted" href="#">Login & Signup</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- End Navigation -->
+
+<!-- Strat Body -->
+{% block body %} {% endblock %}
+<!-- End Body -->
+
+  <!-- Start Footer -->
+
+  <div class="jumbotron jumbotron-fluid mb-0 mt-5">
+    <div class="container">
+      <h1 class="display-4">Footer</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+  <div class="p-2 text-center">
+    © 2019 7EightySix.com.
+  </div>
+
+  <!-- <script src="{% static 'shop/js/owl.carousel.js' %}"></script> -->
+  <!-- <script src="{% static 'shop/js/script.js' %}"></script> -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Optional JavaScript -->
+  {% load static %}
+  <script src="{% static 'shop/js/shopingCart.js' %}"></script>
+</body>
+
+</html>

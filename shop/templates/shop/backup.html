@@ -1,0 +1,294 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Shop Now {% endblock %}
+
+{% block body %}
+<!-- Body -->
+<div class="container-fluid p-2 mt-3">
+  <div class="card p-2 border-0">
+    <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">Filters</h5>
+    <hr>
+    <div class="addfilters">
+      <button type="button" class="btn btn-default border btn-sm">
+        Roadster <span class="badge badge-light">X</span>
+      </button>
+      <button type="button" class="btn btn-default border btn-sm">
+        Rs. 119 To Rs. 4837 <span class="badge badge-light">X</span>
+      </button>
+      <button type="button" class="btn btn-default border btn-sm">
+        Black <span class="badge badge-light">X</span>
+      </button>
+    </div>
+    <hr>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-lg-2 col-xl-2 d-none d-sm-block">
+      <div class="card border-0" style="width: 100%; height: auto;">
+        <!-- Filters -->
+        <div class="category">
+          <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">Brands</h5>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label cursor-pointer" for="customCheck1">Roadster</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck2">
+              <label class="custom-control-label cursor-pointer" for="customCheck2">Puma</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck3">
+              <label class="custom-control-label cursor-pointer" for="customCheck3">United Colors of Benetton</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck4">
+              <label class="custom-control-label cursor-pointer" for="customCheck4">Tommy Hilfige</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck5">
+              <label class="custom-control-label cursor-pointer" for="customCheck5">Jack & Jones</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <div class="category">
+          <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">PRICE</h5>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck6">
+              <label class="custom-control-label cursor-pointer" for="customCheck6">Rs. 119 to Rs. 4837</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck7">
+              <label class="custom-control-label cursor-pointer" for="customCheck7">Rs. 4837 to Rs. 9555</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck8">
+              <label class="custom-control-label cursor-pointer" for="customCheck8">Rs. 9555 to Rs. 14273</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck9">
+              <label class="custom-control-label cursor-pointer" for="customCheck9">Rs. 14273 to Rs. 18991</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+
+        <div class="category">
+          <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">COLOR</h5>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck10">
+              <label class="custom-control-label cursor-pointer" for="customCheck10">Black</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck11">
+              <label class="custom-control-label cursor-pointer" for="customCheck11">Blue</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck12">
+              <label class="custom-control-label cursor-pointer" for="customCheck12">White</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck13">
+              <label class="custom-control-label cursor-pointer" for="customCheck13">Navy Blue</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-capitalize text-muted custom-control custom-checkbox border-0"
+              style="font-size: 10px;">
+              <input type="checkbox" class="custom-control-input" id="customCheck14">
+              <label class="custom-control-label cursor-pointer" for="customCheck14">Grey</label>
+              <span class="border rounded-circle p-1">14</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 col-lg-10 col-xl-10 col-12">
+      <!-- start View products -->
+      <!-- <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">All Products</h5><hr>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        {% for i in product|slice:"0: " %}
+        <div class="col mt-4">
+          <div class="card border-0 p-0 product-card" style="width: 100%;">
+            <img src="/media/{{i.image }}" class="card-img-top" alt="..." style="width: 100%; max-height: 300px;">
+            <div class="card-body d-inline-block text-muted custom-font" style="font-size: 13px;">
+              <h5 class="font-weight-normal text-capitalize text-dark" style="font-size: 15px;">{{i.product_name}}</h5>
+              <p class="card-text">{{i.main_product_category}} | {{i.product_category}} | {{i.product_sub_category}}</p>
+              <p class="card-text"><span class="font-weight-bolder text-dark">₹ {{i.product_price}}</span> <span
+                  class="font-weight-bolder text-muted"><strike>₹{{i.product_price}}</strike></span> <span
+                  class="text-success">({{i.offers}}% OFF)</span></p>
+
+              <div class="d-flex justify-content-between">
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Add to Cart</small></a></p>
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Buy now</small></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div> -->
+      <!-- End View products -->
+
+      <!-- start View products -->
+
+      <!-- Mens ware products -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">Mens Ware</h5><hr>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        {% for i in product|slice:"0: " %}
+        <div class="col mt-4">
+          <div class="card border-0 p-0 product-card" style="width: 100%;">
+            <img src="/media/{{i.image }}" class="card-img-top" alt="..." style="width: 100%; max-height: 300px;">
+            <div class="card-body d-inline-block text-muted custom-font" style="font-size: 13px;">
+              <h5 class="font-weight-normal text-capitalize text-dark" style="font-size: 15px;">{{i.product_name}}</h5>
+              <p class="card-text">{{i.main_product_category}} | {{i.product_category}} | {{i.product_sub_category}}</p>
+              <p class="card-text"><span class="font-weight-bolder text-dark">₹ {{i.product_price}}</span> <span
+                  class="font-weight-bolder text-muted"><strike>₹{{i.product_price}}</strike></span> <span
+                  class="text-success">({{i.offers}}% OFF)</span></p>
+
+              <div class="d-flex justify-content-between">
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Add to Cart</small></a></p>
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Buy now</small></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- End View products -->
+
+      <!-- start View products -->
+
+      <!-- <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">Womens Ware</h5><hr>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        {% for i in product|slice:"0: " %}
+        <div class="col mt-4">
+          <div class="card border-0 p-0 product-card" style="width: 100%;">
+            <img src="/media/{{i.image }}" class="card-img-top" alt="..." style="width: 100%; max-height: 300px;">
+            <div class="card-body d-inline-block text-muted custom-font" style="font-size: 13px;">
+              <h5 class="font-weight-normal text-capitalize text-dark" style="font-size: 15px;">{{i.product_name}}</h5>
+              <p class="card-text">{{i.main_product_category}} | {{i.product_category}} | {{i.product_sub_category}}</p>
+              <p class="card-text"><span class="font-weight-bolder text-dark">₹ {{i.product_price}}</span> <span
+                  class="font-weight-bolder text-muted"><strike>₹{{i.product_price}}</strike></span> <span
+                  class="text-success">({{i.offers}}% OFF)</span></p>
+
+              <div class="d-flex justify-content-between">
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Add to Cart</small></a></p>
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Buy now</small></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div> -->
+
+      <!-- End View products -->
+
+      <!-- start View products -->
+
+      <!-- <h5 class="font-weight-bolder text-uppercase text-dark" style="font-size: 15px;">Kids Ware</h5><hr>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        {% for i in product|slice:"0: " %}
+        <div class="col mt-4">
+          <div class="card border-0 p-0 product-card" style="width: 100%;">
+            <img src="/media/{{i.image }}" class="card-img-top" alt="..." style="width: 100%; max-height: 300px;">
+            <div class="card-body d-inline-block text-muted custom-font" style="font-size: 13px;">
+              <h5 class="font-weight-normal text-capitalize text-dark" style="font-size: 15px;">{{i.product_name}}</h5>
+              <p class="card-text">{{i.main_product_category}} | {{i.product_category}} | {{i.product_sub_category}}</p>
+              <p class="card-text"><span class="font-weight-bolder text-dark">₹ {{i.product_price}}</span> <span
+                  class="font-weight-bolder text-muted"><strike>₹{{i.product_price}}</strike></span> <span
+                  class="text-success">({{i.offers}}% OFF)</span></p>
+
+              <div class="d-flex justify-content-between">
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Add to Cart</small></a></p>
+                <p class="card-text"><a href="#"><small
+                      class="text-muted font-weight-bolder font-italic text-uppercase">+ Buy now</small></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div> -->
+
+      <!-- End View products -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}
